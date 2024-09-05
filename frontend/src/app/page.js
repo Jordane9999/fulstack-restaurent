@@ -132,13 +132,3 @@ export default function Page() {
     </div>
   );
 }
-
-const [menuItems, setMenuItems] = useState(null);
-const router = useRouter();
-const params = useSearchParams();
-
-// State for displaying a success message
-const [displaySuccessMessage, setDisplaySuccessMessage] = useState({
-  show: false,
-  type: "" // either 'add' or 'update'
-});
